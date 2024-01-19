@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gradian</title>
+		<style>
+			body {
+				font-family: 'Arial', sans-serif;
+				background-color: #f2f2f2;
+				margin: 0;
+				padding: 0;
+			}
+			h1 {
+				text-align: center;
+				color: #333;
+			}
+			form {
+				width: 50%;
+				margin: 20px auto;
+				background-color: #fff;
+				padding: 20px;
+				border: 2px solid #333;
+			}
+			label {
+				display: block;
+				margin-bottom: 5px;
+				color: #555;
+			}
+			input[type='text'],
+			input[type='email'],
+			input[type='data'],
+			textarea,
+			select {
+				width: 100%;
+				padding: 10px;
+				margin: 5px 0;
+				box-sizing: border-box;
+				border: 2px solid #ddd;
+				border-radius: 5px;
+				background-color: #fff;
+				color: #555;
+			}
+
+			input[type='data']:focus {
+				border: 2px solid #007bff;
+			}
+
+			input[type='Submit']:focus {
+				background-color: #007bff;
+			}
+
+			.btn {
+				background-color: #007bff;
+				color: #fff;
+				padding: 10px 20px;
+				border: none;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Forma</h1>
+		<form>
+			<label for="username">Ismingiz</label>
+			<input type="text" id="username" name="username" placeholder="Ismingizni kiriting" required />
+
+			<label for="email">Email manzilingiz</label>
+			<input type="email" id="email" name="email" placeholder="emailingizni kiriting" required />
+
+			<label for="birthdata">Tug`ilgan sana</label>
+			<input type="data" id="birthdata" name="birthdata" placeholder="mm/dd/yy" />
+
+			<label for="masssage">Xabaer</label>
+			<textarea name="masssage" id="masssage" placeholder="Xabaringizni kiriting" rows="4" required></textarea>
+
+			<label for="gender">Jinsingiz</label>
+			<select name="gender" id="gender">
+				<option value="male">Erkak</option>
+				<option value="female">Ayol</option>
+				<option value="Other">Boshqa</option>
+			</select>
+
+			<button class="btn">Submit</button>
+		</form>
+	</body>
+</html>
